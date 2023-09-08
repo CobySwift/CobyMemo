@@ -28,6 +28,7 @@
 		CB915C8A2AAAE9B2009806FB /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C892AAAE9B2009806FB /* Scene.swift */; };
 		CB915C8C2AAAEC2A009806FB /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8B2AAAEC2A009806FB /* SceneCoordinatorType.swift */; };
 		CB915C8E2AAAECA8009806FB /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8D2AAAECA8009806FB /* SceneCoordinator.swift */; };
+		CB915C902AAAFBB7009806FB /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8F2AAAFBB7009806FB /* CommonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		CB915C892AAAE9B2009806FB /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		CB915C8B2AAAEC2A009806FB /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		CB915C8D2AAAECA8009806FB /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		CB915C8F2AAAFBB7009806FB /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				CB915C812AAAE6CB009806FB /* MemoDetailViewModel.swift */,
 				CB915C832AAAE6E0009806FB /* MemoComposeViewModel.swift */,
 				CB915C852AAAE806009806FB /* ViewModelBindableType.swift */,
+				CB915C8F2AAAFBB7009806FB /* CommonViewModel.swift */,
 			);
 			path = ViewModoel;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				CB915C8C2AAAEC2A009806FB /* SceneCoordinatorType.swift in Sources */,
 				CB915C802AAAE698009806FB /* MemoListViewModel.swift in Sources */,
 				CB915C822AAAE6CB009806FB /* MemoDetailViewModel.swift in Sources */,
+				CB915C902AAAFBB7009806FB /* CommonViewModel.swift in Sources */,
 				CB915C882AAAE957009806FB /* TransitionModel.swift in Sources */,
 				CB915C7A2AAAE5BE009806FB /* MemoListViewController.swift in Sources */,
 				CB915C7E2AAAE621009806FB /* MemoComposeViewController.swift in Sources */,
