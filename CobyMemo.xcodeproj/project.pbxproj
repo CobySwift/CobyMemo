@@ -10,11 +10,11 @@
 		99894B2B9DC1E6232FDB4642 /* Pods_CobyMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3835744CF7AF520691B6EE21 /* Pods_CobyMemo.framework */; };
 		CB7071022AAAD6A000E9C56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071012AAAD6A000E9C56F /* AppDelegate.swift */; };
 		CB7071042AAAD6A000E9C56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071032AAAD6A000E9C56F /* SceneDelegate.swift */; };
-		CB7071062AAAD6A000E9C56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071052AAAD6A000E9C56F /* ViewController.swift */; };
 		CB7071092AAAD6A000E9C56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7071072AAAD6A000E9C56F /* Main.storyboard */; };
 		CB70710C2AAAD6A000E9C56F /* CobyMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB70710A2AAAD6A000E9C56F /* CobyMemo.xcdatamodeld */; };
 		CB70710E2AAAD6A000E9C56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB70710D2AAAD6A000E9C56F /* Assets.xcassets */; };
 		CB7071112AAAD6A000E9C56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB70710F2AAAD6A000E9C56F /* LaunchScreen.storyboard */; };
+		CB915C722AAADB30009806FB /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C712AAADB30009806FB /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		CB7070FE2AAAD6A000E9C56F /* CobyMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobyMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7071012AAAD6A000E9C56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7071032AAAD6A000E9C56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB7071052AAAD6A000E9C56F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB7071082AAAD6A000E9C56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB70710B2AAAD6A000E9C56F /* CobyMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CobyMemo.xcdatamodel; sourceTree = "<group>"; };
 		CB70710D2AAAD6A000E9C56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7071102AAAD6A000E9C56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB7071122AAAD6A000E9C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB915C712AAADB30009806FB /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,6 @@
 				06113570728E973D7503FA08 /* Pods-CobyMemo.debug.xcconfig */,
 				C96097259B87302971D106B9 /* Pods-CobyMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +82,56 @@
 		CB7071002AAAD6A000E9C56F /* CobyMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB915C702AAADAC9009806FB /* Scene */,
+				CB915C6F2AAADABF009806FB /* Service */,
+				CB915C6E2AAADAB9009806FB /* ViewModoel */,
+				CB915C6D2AAADAB1009806FB /* ViewController */,
+				CB915C6C2AAADAA6009806FB /* Model */,
 				CB7071012AAAD6A000E9C56F /* AppDelegate.swift */,
 				CB7071032AAAD6A000E9C56F /* SceneDelegate.swift */,
-				CB7071052AAAD6A000E9C56F /* ViewController.swift */,
-				CB7071072AAAD6A000E9C56F /* Main.storyboard */,
 				CB70710D2AAAD6A000E9C56F /* Assets.xcassets */,
-				CB70710F2AAAD6A000E9C56F /* LaunchScreen.storyboard */,
 				CB7071122AAAD6A000E9C56F /* Info.plist */,
 				CB70710A2AAAD6A000E9C56F /* CobyMemo.xcdatamodeld */,
 			);
 			path = CobyMemo;
+			sourceTree = "<group>";
+		};
+		CB915C6C2AAADAA6009806FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB915C712AAADB30009806FB /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB915C6D2AAADAB1009806FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB7071072AAAD6A000E9C56F /* Main.storyboard */,
+				CB70710F2AAAD6A000E9C56F /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB915C6E2AAADAB9009806FB /* ViewModoel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModoel;
+			sourceTree = "<group>";
+		};
+		CB915C6F2AAADABF009806FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CB915C702AAADAC9009806FB /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB70710C2AAAD6A000E9C56F /* CobyMemo.xcdatamodeld in Sources */,
-				CB7071062AAAD6A000E9C56F /* ViewController.swift in Sources */,
 				CB7071022AAAD6A000E9C56F /* AppDelegate.swift in Sources */,
 				CB7071042AAAD6A000E9C56F /* SceneDelegate.swift in Sources */,
+				CB915C722AAADB30009806FB /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
