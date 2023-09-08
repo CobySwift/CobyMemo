@@ -1,0 +1,6 @@
+framework module Pods_CobyMemo {
+  umbrella header "Pods-CobyMemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

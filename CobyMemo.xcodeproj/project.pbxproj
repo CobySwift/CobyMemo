@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99894B2B9DC1E6232FDB4642 /* Pods_CobyMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3835744CF7AF520691B6EE21 /* Pods_CobyMemo.framework */; };
 		CB7071022AAAD6A000E9C56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071012AAAD6A000E9C56F /* AppDelegate.swift */; };
 		CB7071042AAAD6A000E9C56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071032AAAD6A000E9C56F /* SceneDelegate.swift */; };
 		CB7071062AAAD6A000E9C56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7071052AAAD6A000E9C56F /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06113570728E973D7503FA08 /* Pods-CobyMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobyMemo.debug.xcconfig"; path = "Target Support Files/Pods-CobyMemo/Pods-CobyMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3835744CF7AF520691B6EE21 /* Pods_CobyMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobyMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96097259B87302971D106B9 /* Pods-CobyMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobyMemo.release.xcconfig"; path = "Target Support Files/Pods-CobyMemo/Pods-CobyMemo.release.xcconfig"; sourceTree = "<group>"; };
 		CB7070FE2AAAD6A000E9C56F /* CobyMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobyMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7071012AAAD6A000E9C56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7071032AAAD6A000E9C56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99894B2B9DC1E6232FDB4642 /* Pods_CobyMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504DCFFE4BCED972E827E423 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06113570728E973D7503FA08 /* Pods-CobyMemo.debug.xcconfig */,
+				C96097259B87302971D106B9 /* Pods-CobyMemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A93955E1259A6AE487446C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3835744CF7AF520691B6EE21 /* Pods_CobyMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB7070F52AAAD6A000E9C56F = {
 			isa = PBXGroup;
 			children = (
 				CB7071002AAAD6A000E9C56F /* CobyMemo */,
 				CB7070FF2AAAD6A000E9C56F /* Products */,
+				504DCFFE4BCED972E827E423 /* Pods */,
+				A93955E1259A6AE487446C95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB7071152AAAD6A000E9C56F /* Build configuration list for PBXNativeTarget "CobyMemo" */;
 			buildPhases = (
+				D4FAB154C33A10E4CC937465 /* [CP] Check Pods Manifest.lock */,
 				CB7070FA2AAAD6A000E9C56F /* Sources */,
 				CB7070FB2AAAD6A000E9C56F /* Frameworks */,
 				CB7070FC2AAAD6A000E9C56F /* Resources */,
+				84363C0E9BE7FD1820183E72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +133,7 @@
 				};
 			};
 			buildConfigurationList = CB7070F92AAAD6A000E9C56F /* Build configuration list for PBXProject "CobyMemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84363C0E9BE7FD1820183E72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CobyMemo/Pods-CobyMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CobyMemo/Pods-CobyMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CobyMemo/Pods-CobyMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4FAB154C33A10E4CC937465 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CobyMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB7070FA2AAAD6A000E9C56F /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		CB7071162AAAD6A000E9C56F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06113570728E973D7503FA08 /* Pods-CobyMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,8 +367,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +375,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coby.CobyMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,6 +386,7 @@
 		};
 		CB7071172AAAD6A000E9C56F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96097259B87302971D106B9 /* Pods-CobyMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,8 +398,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +406,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coby.CobyMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
