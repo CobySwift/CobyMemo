@@ -27,7 +27,7 @@
         <!--메모 목록-->
         <scene sceneID="gUn-Gd-5Vv">
             <objects>
-                <viewController id="fI1-6a-uEi" sceneMemberID="viewController">
+                <viewController id="fI1-6a-uEi" customClass="MemoListViewController" customModule="CobyMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gFE-LI-xae">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1991.6030534351144" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Memo Detail View Controller-->
         <scene sceneID="sDZ-XM-gjr">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="gN3-wB-NO9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="gN3-wB-NO9" customClass="MemoDetailViewController" customModule="CobyMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0pA-Y9-Bhb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--새 메모-->
         <scene sceneID="cVE-eH-ao0">
             <objects>
-                <viewController id="lQa-lD-Jc6" sceneMemberID="viewController">
+                <viewController id="lQa-lD-Jc6" customClass="MemoComposeViewController" customModule="CobyMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kju-Bc-Z9Q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
