@@ -29,6 +29,7 @@
 		CB915C8C2AAAEC2A009806FB /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8B2AAAEC2A009806FB /* SceneCoordinatorType.swift */; };
 		CB915C8E2AAAECA8009806FB /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8D2AAAECA8009806FB /* SceneCoordinator.swift */; };
 		CB915C902AAAFBB7009806FB /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB915C8F2AAAFBB7009806FB /* CommonViewModel.swift */; };
+		CBD2B97F2AAEE92D002EA207 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD2B97E2AAEE92D002EA207 /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		CB915C8B2AAAEC2A009806FB /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		CB915C8D2AAAECA8009806FB /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		CB915C8F2AAAFBB7009806FB /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		CBD2B97E2AAEE92D002EA207 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				CB70710A2AAAD6A000E9C56F /* CobyMemo.xcdatamodeld */,
+				CBD2B97E2AAEE92D002EA207 /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB915C782AAADF94009806FB /* MemoryStorage.swift in Sources */,
+				CBD2B97F2AAEE92D002EA207 /* CoreDataStorage.swift in Sources */,
 				CB915C842AAAE6E0009806FB /* MemoComposeViewModel.swift in Sources */,
 				CB915C8E2AAAECA8009806FB /* SceneCoordinator.swift in Sources */,
 				CB915C8A2AAAE9B2009806FB /* Scene.swift in Sources */,
