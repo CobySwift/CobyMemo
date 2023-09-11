@@ -21,7 +21,7 @@ class SceneCoordinator: SceneCoordinatorType {
     }
     
     @discardableResult
-    func transition(to scene: Scene, using style: TransitionStyle, animated: Bool) -> RxSwift.Completable {
+    func transition(to scene: Scene, using style: TransitionStyle, animated: Bool) -> Completable {
         let subject = PublishSubject<Never>()
         
         let target = scene.instantiate()
@@ -54,9 +54,9 @@ class SceneCoordinator: SceneCoordinatorType {
     }
     
     @discardableResult
-    func close(animated: Bool) -> RxSwift.Completable {
+    func close(animated: Bool) -> Completable {
         return Completable.create { [unowned self] completable in
-            if let presentingVC = self.currentVC.presentedViewController {
+            if let presentingVC = self.currentVC.presentingViewController {
                 self.currentVC.dismiss(animated: animated) {
                     self.currentVC = presentingVC
                     completable(.completed)
