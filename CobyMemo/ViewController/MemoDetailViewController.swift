@@ -55,6 +55,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                 vc.present(activityVC, animated: true, completion: nil)
             })
             .disposed(by: rx.disposeBag)
+        
+        deleteButton.rx.action = viewModel.makeDeleteAction()
     }
 
     override func viewDidLoad() {
